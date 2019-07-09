@@ -43,9 +43,7 @@ class VendorMachineInterface
 		puts '1) 0.1, 2) 0.5, 3) 0.10, 4) 0.25, 5) 0.50, 6) 1, 7) 2'
 		puts 'any other key to continue: '
 		selected_option = gets.chomp
-		binding.pry
 		selected_value = OPTIONS_AMOUNT.fetch(selected_option, false)
-		binding.pry
 		if selected_value
 			vendor_machine.insert_money(selected_value)
 			clear_screen
