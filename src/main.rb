@@ -1,0 +1,3 @@
+require_relative 'vendor_machine_interface'
+
+VendorMachineInterface.new
